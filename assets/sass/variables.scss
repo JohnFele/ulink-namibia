@@ -1,0 +1,76 @@
+
+:root {
+    // brand colors
+    --primary-color: #EB7439;
+    --shade: #fff6f2;
+    --dark-shade: #ffe5d7;
+    --black: #0d0f10;
+    --white: #fff;
+    --grey: #eee;
+
+    // text color
+    --txt-dark: #200f06; // for headings
+    --txt-light: #554f4c; // for paragraphs
+
+    // font size
+    --fs-small: 12px;
+    --fs-medium: 14px;
+    --fs-medium-large: 15px;
+    --fs-large: 20px;
+    --fs-extra-large: 35px;
+
+    // font weight
+    --fw-medium: 500;
+    --fw-medium-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+    // line height
+    --lh-medium: 22px;
+    --lh-medium-large: 28px;
+    --lh-large: 45px;
+
+    // border radius
+    --br-small: 5px;
+    --br-medium: 10px;
+    --br-medium-large: 15px;
+    --br-large: 20px;
+
+    --separator-margin: 100px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+        // font size
+        --fs-small: 11px;
+        --fs-medium: 13px;
+        --fs-medium-large: 14px;
+        --fs-large: 18px;
+        --fs-extra-large: 30px;
+    
+        --separator-margin: 80px;
+    }
+}
+
+
+
+@media screen and (max-width: 999px) {
+
+    :root {
+        // font size
+        --fs-medium: 12.5px;
+        --fs-extra-large: 23px;
+    
+
+        // line height
+        --lh-large: 30px;
+        --lh-medium: 19px;
+        --lh-medium-large: 24px;
+        
+    
+        --separator-margin: 60px;
+    }
+
+}

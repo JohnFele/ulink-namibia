@@ -1,0 +1,204 @@
+﻿<header
+  class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md supports-backdrop-filter:bg-white/80 transition-all duration-300 shadow-sm"
+  id="mainHeader"
+>
+  <!-- Scroll progress indicator -->
+  <div class="h-0.5 w-full bg-transparent">
+    <div
+      id="scrollIndicator"
+      class="h-full w-0 bg-linear-to-r from-(--ulink-orange) to-orange-400 transition-[width] duration-200 ease-out"
+      role="progressbar"
+      aria-label="Scroll progress"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+    ></div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="Ulink home">
+        <img
+          src="./assets/images/Ulink Logo - 1.png"
+          alt="Ulink"
+          class="h-8 w-auto transition-all duration-300 group-hover:scale-105 sm:h-9"
+          decoding="async"
+          width="120"
+          height="32"
+        />
+        <span class="sr-only">Ulink</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-800" aria-label="Primary navigation">
+        <a
+          data-nav
+          class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+          href="solutions.html"
+        >
+          Solutions
+        </a>
+        <a
+          data-nav
+          class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+          href="how-it-works.html"
+        >
+          How it Works
+        </a>
+        <a
+          data-nav
+          class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+          href="about.html"
+        >
+          About
+        </a>
+        <a
+          data-nav
+          class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+          href="quotations.html"
+        >
+          Brochures
+        </a>
+        <a
+          data-nav
+          class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+          href="contact.html"
+        >
+          Contact
+        </a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:flex items-center gap-3">
+        <a
+          href="demo.html"
+          class="relative rounded-xl bg-linear-to-r from-(--ulink-orange) to-orange-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:from-(--ulink-orange-hover) hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-(--ulink-orange)/40 active:scale-[0.98] group"
+        >
+          <span class="relative z-10 flex items-center gap-2">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            Book a Demo
+          </span>
+          <span
+            class="absolute inset-0 rounded-xl bg-linear-to-r from-orange-600 to-(--ulink-orange-hover) opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="menuBtn"
+        type="button"
+        class="md:hidden inline-flex items-center justify-center rounded-xl p-2 hover:bg-black/10 active:bg-black/20 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-(--ulink-orange)/40"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <svg
+          id="menuIcon"
+          class="h-7 w-7 text-neutral-800 group-hover:text-(--ulink-orange) transition-colors duration-300"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div
+    id="menuOverlay"
+    class="md:hidden fixed inset-0 z-40 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-out"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu (Drawer) -->
+  <div
+    id="mobileMenu"
+    class="md:hidden fixed top-0 right-0 z-50 h-dvh w-full max-w-sm translate-x-full bg-white shadow-2xl border-l border-black/10 transition-transform duration-300 ease-out will-change-transform"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    inert
+    aria-label="Mobile navigation menu"
+  >
+    <div class="flex items-center justify-between px-5 py-4 border-b border-black/10 bg-white">
+      <span class="font-semibold text-neutral-900 text-base">Menu</span>
+      <button
+        id="closeMenuBtn"
+        type="button"
+        class="inline-flex items-center justify-center rounded-xl p-2 hover:bg-black/10 active:bg-black/20 transition-colors focus:outline-none focus:ring-2 focus:ring-(--ulink-orange)/40"
+        aria-label="Close menu"
+      >
+        <svg class="h-6 w-6 text-neutral-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="px-5 py-6 space-y-0 flex-1 overflow-y-auto">
+      <a 
+        data-nav 
+        class="mobilelink block py-3 px-2 text-base font-medium text-neutral-800 border-b border-black/5 hover:bg-black/5 hover:text-(--ulink-orange) rounded-lg transition-colors" 
+        href="solutions.html"
+      >
+        Solutions
+      </a>
+      <a 
+        data-nav 
+        class="mobilelink block py-3 px-2 text-base font-medium text-neutral-800 border-b border-black/5 hover:bg-black/5 hover:text-(--ulink-orange) rounded-lg transition-colors" 
+        href="how-it-works.html"
+      >
+        How it Works
+      </a>
+      <a 
+        data-nav 
+        class="mobilelink block py-3 px-2 text-base font-medium text-neutral-800 border-b border-black/5 hover:bg-black/5 hover:text-(--ulink-orange) rounded-lg transition-colors" 
+        href="about.html"
+      >
+        About
+      </a>
+      <a
+        data-nav
+        class="navlink relative py-2 px-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-(--ulink-orange) after:transition-all after:duration-300 hover:after:w-full"
+        href="quotations.html"
+      >
+        Brochures
+      </a>
+      <a 
+        data-nav 
+        class="mobilelink block py-3 px-2 text-base font-medium text-neutral-800 border-b border-black/5 hover:bg-black/5 hover:text-(--ulink-orange) rounded-lg transition-colors" 
+        href="contact.html"
+      >
+        Contact
+      </a>
+
+      <div class="pt-6 mt-4 border-t border-black/10">
+        <a
+          href="demo.html"
+          class="block w-full text-center rounded-xl bg-linear-to-r from-(--ulink-orange) to-orange-500 px-5 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-(--ulink-orange)/40"
+        >
+          <span class="flex items-center justify-center gap-2">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            Book a Demo
+          </span>
+        </a>
+        
+        <div class="mt-4 text-center text-xs text-neutral-500">
+          <p>Need help? Call us at</p>
+          <a href="tel:0833000400" class="font-semibold text-(--ulink-orange) hover:underline">
+            083 3000 400
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

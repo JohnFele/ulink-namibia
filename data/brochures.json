@@ -1,0 +1,84 @@
+[
+  {
+    "id": "bro1",
+    "title": "Canon IR & Smart Glasses",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Canon IR 1643 & Smart Glasses - Cash.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Canon IR 1643 & Smart Glasses - Cash.jpg",
+    "thumbnailFit": "cover",
+    "description": "New Canon IR & Smart Glasses, Cash Option."
+  },
+  {
+    "id": "bro2",
+    "title": "Canon IR & Smart Glasses",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Canon IR 1643 & Smart Glasses - Rental.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Canon IR 1643 & Smart Glasses - Rental.jpg",
+    "thumbnailFit": "cover",
+    "description": "New Canon IR & Smart Glasses, Rental Option."
+  },
+  {
+    "id": "bro3",
+    "title": "Meta",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Meta - Cash.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Meta - Cash.jpg",
+    "thumbnailFit": "cover",
+    "description": "Introduce coding and robotics in VR, Cash Option."
+  },
+  {
+    "id": "bro4",
+    "title": "Meta",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Meta - Rental.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Meta - Rental.jpg",
+    "thumbnailFit": "cover",
+    "description": "Introduce coding and robotics in VR, Rental Option."
+  },
+  {
+    "id": "bro5",
+    "title": "Parrot & Meta",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Parrot & Meta - Cash.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Parrot & Meta - Cash.jpg",
+    "thumbnailFit": "cover",
+    "description": "Smart Touch VR Cash Option."
+  },
+  {
+    "id": "bro6",
+    "title": "Parrot & Meta Rental",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Parrot & Meta - Rental.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Parrot & Meta - Rental.jpg",
+    "thumbnailFit": "cover",
+    "description": "Smart Touch VR Rental Option."
+  },
+  {
+    "id": "bro7",
+    "title": "Pico",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Pico - Cash.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Pico - Cash.jpg",
+    "thumbnailFit": "cover",
+    "description": "Pico Headsets, Cash Option."
+  },
+  {
+    "id": "bro8",
+    "title": "Pico",
+    "type": "image",
+    "src": "./assets/brochures/Flyer - Pico - Rental.jpg",
+    "thumbnail": "./assets/brochures/Flyer - Pico - Rental.jpg",
+    "thumbnailFit": "cover",
+    "description": "Pico Headsets, Rental Option."
+  },
+  {
+    "id": "bro9",
+    "title": "Inclusive learning with VR",
+    "type": "pdf",
+    "src": "./assets/brochures/Inclusive Learning Through VR.pdf",
+    "thumbnailFit": "contain",
+    "thumbnail": "./assets/images/logo2.png",
+    "description": "Virtual Reality, Cash Option.",
+    "pages": 6
+  }
+]

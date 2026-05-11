@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ulink | Brochures — VR & XR Resources</title>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Explore Ulink's collection of brochures and resources for managed VR, XR licenses, and immersive learning deployments.">
+  
+  <link rel="stylesheet" href="./assets/css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Skip link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-999 focus:rounded-lg focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow focus:outline-none">
+    Skip to content
+  </a>
+
+  <!-- Site header (partial) -->
+  <div id="site-header"></div>
+
+  <main id="main-content" class="flex-1 pt-16">
+    <!-- HERO SECTION -->
+    <section class="bg-(--sand) border-b border-black/5">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div class="max-w-3xl">
+          <h1 class="mb-4 font-serif text-4xl sm:text-5xl text-(--ink) tracking-tight">
+            Brochures & Resources
+          </h1>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-xs font-semibold text-neutral-700">
+            <span class="h-2 w-2 rounded-full bg-(--ulink-orange)"></span>
+            product sheets & deployment guides
+          </span>
+          <p class="mt-4 text-base sm:text-lg text-neutral-700 max-w-2xl">
+            Browse our collection of brochures — single-page previews or multi-page PDFs. 
+            Click any item to view full details.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="contact.html"
+               class="inline-flex items-center justify-center rounded-xl bg-(--ulink-orange) px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-(--ulink-orange-hover) transition">
+              Request custom brochure
+            </a>
+            <a href="#brochures-grid"
+               class="inline-flex items-center justify-center rounded-xl border border-black/10 bg-white px-5 py-2.5 text-sm font-semibold text-neutral-800 hover:bg-black/5 transition">
+              Browse library
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BROCHURES GALLERY -->
+    <section id="brochures-grid" class="bg-white py-14 lg:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="font-serif text-3xl text-(--ink)">Explore our brochures</h2>
+          <p class="mt-2 text-neutral-600 max-w-2xl mx-auto">
+            Single-page images or multi-page PDFs — click to preview in detail.
+          </p>
+        </div>
+
+        <div id="brochures-container" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- Skeleton placeholders - will be replaced by JS -->
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="p-4"><div class="h-5 w-3/4 bg-gray-200 rounded mb-2"></div><div class="h-4 w-1/2 bg-gray-100 rounded"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="p-4"><div class="h-5 w-3/4 bg-gray-200 rounded mb-2"></div><div class="h-4 w-1/2 bg-gray-100 rounded"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="p-4"><div class="h-5 w-3/4 bg-gray-200 rounded mb-2"></div><div class="h-4 w-1/2 bg-gray-100 rounded"></div></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="p-4"><div class="h-5 w-3/4 bg-gray-200 rounded mb-2"></div><div class="h-4 w-1/2 bg-gray-100 rounded"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="bg-(--surface) py-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-white p-8 shadow-sm border border-black/5">
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <span class="inline-block rounded-full bg-(--sand) px-3 py-1 text-xs font-semibold text-(--ulink-orange)">Ulink resources</span>
+              <h3 class="mt-3 font-serif text-2xl text-(--ink)">Detailed specs & deployment guides</h3>
+              <ul class="mt-5 space-y-3">
+                <li class="flex gap-3"><span class="text-(--ulink-orange) font-bold">✓</span><span class="text-neutral-700">Managed Meta & Pico hardware overviews</span></li>
+                <li class="flex gap-3"><span class="text-(--ulink-orange) font-bold">✓</span><span class="text-neutral-700">Delightex & ThingLink license comparison</span></li>
+                <li class="flex gap-3"><span class="text-(--ulink-orange) font-bold">✓</span><span class="text-neutral-700">Classroom implementation & safety</span></li>
+                <li class="flex gap-3"><span class="text-(--ulink-orange) font-bold">✓</span><span class="text-neutral-700">VR coding & robotics curriculum map</span></li>
+              </ul>
+              <div class="mt-6">
+                <a href="demo.html" class="text-sm font-semibold text-(--ulink-orange) hover:underline inline-flex items-center gap-1">
+                  Request a tailored brochure <span>→</span>
+                </a>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl bg-linear-to-tr from-orange-50 to-white ring-1 ring-black/5 p-6 text-center">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl bg-(--sand) p-4"><div class="text-2xl font-bold text-(--ulink-orange)">Managed</div><div class="text-xs text-neutral-600">VR bundles</div></div>
+                <div class="rounded-xl bg-(--sand) p-4"><div class="text-2xl font-bold text-(--ulink-orange)">Licenses</div><div class="text-xs text-neutral-600">Delightex/ThingLink</div></div>
+                <div class="rounded-xl bg-(--sand) p-4"><div class="text-2xl font-bold text-(--ulink-orange)">Safety</div><div class="text-xs text-neutral-600">best practices</div></div>
+                <div class="rounded-xl bg-(--sand) p-4"><div class="text-2xl font-bold text-(--ulink-orange)">Coding</div><div class="text-xs text-neutral-600">virtual robotics</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+        <div class="rounded-3xl bg-linear-to-r from-(--ulink-orange) to-orange-500 p-8 sm:p-10 text-center">
+          <h3 class="font-serif text-2xl text-white">Let's link you to the right resources</h3>
+          <p class="mt-3 text-white/90 max-w-2xl mx-auto">
+            Book a demo and we'll provide the exact brochures and spec sheets for your environment.
+          </p>
+          <a href="demo.html"
+             class="mt-6 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-(--ulink-orange) hover:bg-white/95 transition">
+            Book Your Demo Now
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="site-footer"></div>
+
+  <!-- Toast container -->
+  <div id="toastHost" class="fixed bottom-4 right-4 z-60 flex w-[92vw] max-w-sm flex-col gap-2"></div>
+
+  <!-- Image/PDF Modal -->
+  <div id="brochureModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close preview">&times;</button>
+      
+      <!-- Dynamic content area -->
+      <div id="modalDynamicContent" class="modal-content-wrapper">
+        <!-- Will be populated dynamically -->
+      </div>
+      
+      <div id="modalFooter" class="modal-title-section">
+        <!-- Title and download button will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  
+  <!-- Main site scripts -->
+  <script src="js/main.js?v=20260209" defer></script>
+  
+  <!-- Brochures page specific script -->
+  <script src="js/brochures.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+variables:
+  FTP_USER: "Ulink@test.ulink2all.co.za"
+  FTP_PASS: "W#dm{@E-eb0m"
+  FTP_HOST: "132.148.176.204"
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  before_script:
+    - |
+      if [ "$CI_COMMIT_BRANCH" = "main" ]; then
+        export FTP_DIR="/public_html/ulink.co.za/"
+      elif [ "$CI_COMMIT_BRANCH" = "dev" ]; then
+        export FTP_DIR="/dev/ulink.co.za/"
+      fi
+  script:
+  - apt-get update -y && apt-get install -y lftp
+  - echo "Connecting to FTP server..."
+  - lftp -d -c "set ftp:ssl-allow yes; set ssl:verify-certificate no; open -u $FTP_USER,'$FTP_PASS' $FTP_HOST; mirror -R ./ $FTP_DIR"
+  only:
+    - main
+    - dev
